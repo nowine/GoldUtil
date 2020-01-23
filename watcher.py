@@ -16,7 +16,7 @@ def watch():
 
     msg_text = ''.join(msg)
     #print(msg_text)
-    default_email.send_mail('自动化测试', msg_text)
+    default_email.send_mail('黄金报价监控', msg_text)
 
 
 if __name__ == '__main__':

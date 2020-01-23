@@ -96,19 +96,35 @@ class BankGoldObject(BaseGoldObject):
         <h1>
           <p>{variety}</p>
         </h1>
-        <table>
-          <th>
-            <td>字段</td><td>值</td>
-          </th>
+        <table border=1>
+          <tr>
+            <th>字段</th><th>值</th>
+          </tr>
           <tr>
             <td>中间价</td><td>{middle_price}</td>
+          </tr>
+          <tr>
             <td>银行买入价</td><td>{bank_buy_in}</td>
+          </tr>
+          <tr>
             <td>银行卖出价</td><td>{bank_sell_out}</td>
+          </tr>
+          <tr>
             <td>最高价</td><td>{max_price}</td>
+          </tr>
+          <tr>
             <td>最低价</td><td>{min_price}</td>
+          </tr>
+          <tr>
             <td>今日开盘价</td><td>{today_open}</td>
+          </tr>
+          <tr>
             <td>昨日收盘价</td><td>{yesterday_close}</td>
+          </tr>
+          <tr>
             <td>价格变动</td><td>{price_variance}</td>
+          </tr>
+          <tr>
             <td>价格时间</td><td>{price_at_time}</td>
           </tr>
         </table>
