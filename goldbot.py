@@ -1,4 +1,4 @@
-# coding: utf-8
+# coding:utf-8
 
 import requests
 import juhe_config
@@ -56,7 +56,6 @@ class BankGoldBot(BaseBot):
         if self.get_raw(url, params=params) == 200:
             gold_objs = []
             for watcher in self.watchers:
-                print(self.result[watcher])
                 gold_objs.append(BankGoldObject(self.result[watcher]))
             return gold_objs
         else:
